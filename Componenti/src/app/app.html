@@ -13,3 +13,11 @@
 [testo]="p.testo"
 >
 </app-post>
+<p *ngIf="posts.length===0">nessun messaggio</p>
+
+
+<p>Post visibili: {{ postVisibili().length }}</p>
+
+<p *ngIf="postVisibili().length === 0" class="text-muted mt-3">
+  Nessun post disponibile
+</p>

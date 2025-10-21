@@ -26,4 +26,8 @@ export class App {
   testo: 'esempio di testo3'
   }
   ];
+
+  postVisibili() {
+    return this.posts.filter(p => p.testo.length <= 20);
+  }
 }
